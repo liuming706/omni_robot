@@ -39,7 +39,7 @@
       <always_on>1</always_on>
 
       <!-- Set update_rate only sensor, not on plugin -->
-      <update_rate>1</update_rate>
+      <update_rate>20</update_rate>
 
       <camera name="my_camera">
         <image>
@@ -99,7 +99,7 @@
       <always_on>1</always_on>
 
       <!-- Set update_rate only sensor, not on plugin -->
-      <update_rate>1</update_rate>
+      <update_rate>20</update_rate>
 
       <camera name="my_camera2">
         <image>
