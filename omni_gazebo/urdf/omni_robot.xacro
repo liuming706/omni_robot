@@ -16,7 +16,8 @@
 	<xacro:include filename="$(find omni_gazebo)/urdf/sensors/inertial.xacro" />
 	<xacro:include filename="$(find omni_gazebo)/urdf/sensors/laser_support.xacro" />
 	<xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro" />
-	<xacro:VLP-16 name="velodyne" />
+	<!--xacro:VLP-16
+	name="velodyne" /-->
 	<xacro:include filename="$(find omni_gazebo)/urdf/sensors/imu.xacro" />
 	<xacro:imu sensor_name="imu" parent_link="base_link">
 		<origin rpy="0 0 0" xyz="-0.03 0 ${base_z_size/2}" />
