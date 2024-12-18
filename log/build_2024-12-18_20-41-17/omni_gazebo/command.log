@@ -1,0 +1,4 @@
+Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo -- -j32 -l32
+Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo -- -j32 -l32
+Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo
+Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo

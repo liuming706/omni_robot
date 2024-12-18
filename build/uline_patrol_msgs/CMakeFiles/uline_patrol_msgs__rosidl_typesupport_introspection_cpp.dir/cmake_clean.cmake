@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uline_patrol_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uline_patrol_msgs/action/detail/uline_patrol_command__type_support.cpp.o"
+  "CMakeFiles/uline_patrol_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uline_patrol_msgs/action/detail/uline_patrol_command__type_support.cpp.o.d"
+  "CMakeFiles/uline_patrol_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uline_patrol_msgs/srv/detail/uline_patrol_command__type_support.cpp.o"
+  "CMakeFiles/uline_patrol_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uline_patrol_msgs/srv/detail/uline_patrol_command__type_support.cpp.o.d"
+  "libuline_patrol_msgs__rosidl_typesupport_introspection_cpp.pdb"
+  "libuline_patrol_msgs__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/uline_patrol_msgs/action/detail/uline_patrol_command__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/uline_patrol_msgs/action/detail/uline_patrol_command__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/uline_patrol_msgs/srv/detail/uline_patrol_command__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/uline_patrol_msgs/srv/detail/uline_patrol_command__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/uline_patrol_msgs__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

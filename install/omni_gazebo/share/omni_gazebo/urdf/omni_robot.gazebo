@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<robot>
+  <gazebo>
+    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>world</odometryTopic>
+      <odometryFrame>world</odometryFrame>
+      <odometryRate>30.0</odometryRate>
+      <robotBaseFrame>base_footprint</robotBaseFrame>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="hold_box1">
+    <material>Gazebo/Blue</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="top_wheel">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="left_bottom_wheel">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  <gazebo reference="right_bottom_wheel">
+    <material>Gazebo/Black</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <gazebo reference="camera_link">
+    <sensor type="depth" name="my_sensor">
+      <!-- Set always_on only sensor, not on plugin -->
+      <always_on>1</always_on>
+
+      <!-- Set update_rate only sensor, not on plugin -->
+      <update_rate>5</update_rate>
+
+      <camera name="my_camera">
+        <image>
+          <width>640</width>
+          <height>480</height>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>30</far>
+        </clip>
+        <distortion>
+          <k1>0.0</k1>
+          <k2>0.0</k2>
+          <k3>0.0</k3>
+          <p1>0.0</p1>
+          <p2>0.0</p2>
+          <center>0.0 0.0</center>
+        </distortion>
+      </camera>
+
+      <plugin name="camera" filename="libgazebo_ros_camera.so">
+        <!-- Change namespace, camera name and topics so -
+             * Raw images are published to: /custom_ns/custom_camera/custom_image
+             * Depth images are published to: /custom_ns/custom_camera/custom_image_depth
+             * Raw image camera info is published to: /custom_ns/custom_camera/custom_info_raw
+             * Depth image camera info is published to: /custom_ns/custom_camera/custom_info_depth
+             * Point cloud is published to: /custom_ns/custom_camera/custom_points
+        -->
+        <ros>
+          <namespace>custom_ns</namespace>
+          <remapping>custom_camera/image_raw:=custom_camera/custom_image</remapping>
+          <remapping>custom_camera/image_depth:=custom_camera/custom_image_depth</remapping>
+          <remapping>custom_camera/camera_info:=custom_camera/custom_info_raw</remapping>
+          <remapping>custom_camera/camera_info_depth:=custom_camera/custom_info_depth</remapping>
+          <remapping>custom_camera/points:=custom_camera/custom_points</remapping>
+        </ros>
+
+        <!-- Set camera name. If empty, defaults to sensor name (i.e. "sensor_name") -->
+        <camera_name>custom_camera</camera_name>
+
+        <!-- Set TF frame name. If empty, defaults to link name (i.e. "link_name") -->
+        <frame_name>camera_depth_frame</frame_name>
+
+        <hack_baseline>0.07</hack_baseline>
+
+        <!-- No need to repeat distortion parameters or to set autoDistortion -->
+
+        <min_depth>0.001</min_depth>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+
+  <gazebo reference="camera_link_back">
+    <sensor type="depth" name="my_sensor2">
+      <!-- Set always_on only sensor, not on plugin -->
+      <always_on>1</always_on>
+
+      <!-- Set update_rate only sensor, not on plugin -->
+      <update_rate>5</update_rate>
+
+      <camera name="my_camera2">
+        <image>
+          <width>640</width>
+          <height>480</height>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>30</far>
+        </clip>
+        <distortion>
+          <k1>0.0</k1>
+          <k2>0.0</k2>
+          <k3>0.0</k3>
+          <p1>0.0</p1>
+          <p2>0.0</p2>
+          <center>0.0 0.0</center>
+        </distortion>
+      </camera>
+
+      <plugin name="camera_back" filename="libgazebo_ros_camera.so">
+        <!-- Change namespace, camera name and topics so -
+             * Raw images are published to: /custom_ns/custom_camera/custom_image
+             * Depth images are published to: /custom_ns/custom_camera/custom_image_depth
+             * Raw image camera info is published to: /custom_ns/custom_camera/custom_info_raw
+             * Depth image camera info is published to: /custom_ns/custom_camera/custom_info_depth
+             * Point cloud is published to: /custom_ns/custom_camera/custom_points
+        -->
+        <ros>
+          <namespace>custom_ns</namespace>
+          <remapping>custom_camera/image_raw:=custom_camera2/custom_image</remapping>
+          <remapping>custom_camera/image_depth:=custom_camera2/custom_image_depth</remapping>
+          <remapping>custom_camera/camera_info:=custom_camera2/custom_info_raw</remapping>
+          <remapping>custom_camera/camera_info_depth:=custom_camera2/custom_info_depth</remapping>
+          <remapping>custom_camera/points:=custom_camera2/custom_points</remapping>
+        </ros>
+
+        <!-- Set camera name. If empty, defaults to sensor name (i.e. "sensor_name") -->
+        <camera_name>custom_camera2</camera_name>
+
+        <!-- Set TF frame name. If empty, defaults to link name (i.e. "link_name") -->
+        <frame_name>camera_depth_frame_back</frame_name>
+
+        <hack_baseline>0.07</hack_baseline>
+
+        <!-- No need to repeat distortion parameters or to set autoDistortion -->
+
+        <min_depth>0.001</min_depth>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- RpLidar using CPU -->
+  <!--<gazebo
+  reference="laser">
+    <material>Gazebo/Black</material>
+    <sensor type="ray" name="head_rplidar_sensor">
+      <visualize>true</visualize>
+      <update_rate>30.0</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>60</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.1</min>
+          <max>12.0</max>
+          <resolution>0.02</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_rplidar_controller" filename="libgazebo_ros_laser.so">
+        <topicName>scan</topicName>
+        <frameName>laser</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>-->
+
+  <!-- -->
+  <!-- <gazebo reference="imu_sensor_link">
+        <gravity>true</gravity>
+        <sensor name='imu_sensor' type='imu'>
+            <always_on>1</always_on>
+            <update_rate>30.0</update_rate>
+            <visualize>true</visualize>
+            <topic>__default_topic__</topic>
+            <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+                <topicName>imu_data</topicName>
+                <frameName>imu_sensor_link</frameName>
+                <bodyName>imu_sensor_link</bodyName>
+                <updateRateHZ>30.0</updateRateHZ>
+                <gaussianNoise>0.0</gaussianNoise>
+                <xyzOffset>0 0 0</xyzOffset>
+                <rpyOffset>0 0 0</rpyOffset>
+            </plugin>
+            <pose>0 0 0 0 0 0</pose>
+        </sensor>
+    </gazebo> -->
+</robot>

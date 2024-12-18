@@ -1,0 +1,12 @@
+string command
+int64 initial_dis 
+float64 velocity
+float64 duration
+float64 obstacle_stop_time
+float64 apriltag_stop_distance
+---
+int64 ret_code # -1:未知命令;0:正常结束;1:图像未初始化结束;2:腿部服务未成功调用结束;3:指定时间持续有障碍物结束;4:指定范围有二维码结束;
+string state
+---
+float64 elapsed_time
+string state

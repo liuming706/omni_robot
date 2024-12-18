@@ -1,0 +1,7 @@
+{
+  "package_name": "uline_patrol_msgs",
+  "non_idl_tuples": [
+    "/home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs:srv/UlinePatrolCommand.srv",
+    "/home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs:action/UlinePatrolCommand.action"
+  ]
+}

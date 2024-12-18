@@ -1,0 +1,441 @@
+[0.052s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.052s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e2a3e146f20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e2a3e2fc9d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e2a3e2fc9d0>>, mixin_verb=('build',))
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.127s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lumen/workspace/humble_ws/src/omni_robot'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(omni_gazebo) by extension 'ros'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'omni_gazebo' with type 'ros.ament_cmake' and name 'omni_gazebo'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(uline_patrol_msgs) by extension 'ros'
+[0.137s] DEBUG:colcon.colcon_core.package_identification:Package 'uline_patrol_msgs' with type 'ros.ament_cmake' and name 'uline_patrol_msgs'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'ros'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extensions ['cmake', 'python']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'cmake'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'python'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extensions ['python_setup_py']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator) by extension 'python_setup_py'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'ros'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extensions ['cmake', 'python']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'cmake'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'python'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extensions ['python_setup_py']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/img) by extension 'python_setup_py'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extensions ['ignore', 'ignore_ament_install']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extension 'ignore'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extension 'ignore_ament_install'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extensions ['colcon_pkg']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extension 'colcon_pkg'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extensions ['colcon_meta']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extension 'colcon_meta'
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extensions ['ros']
+[0.137s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_description) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'velodyne_simulator/velodyne_description' with type 'ros.ament_cmake' and name 'velodyne_description'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_gazebo_plugins) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'velodyne_simulator/velodyne_gazebo_plugins' with type 'ros.ament_cmake' and name 'velodyne_gazebo_plugins'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(velodyne_simulator/velodyne_simulator) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'velodyne_simulator/velodyne_simulator' with type 'ros.ament_cmake' and name 'velodyne_simulator'
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.154s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/lumen/workspace/humble_ws/src/omni_robot/install
+[0.155s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 292 installed packages in /opt/ros/humble
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'omni_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.176s] DEBUG:colcon.colcon_core.verb:Building package 'omni_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo', 'merge_install': False, 'path': '/home/lumen/workspace/humble_ws/src/omni_robot/omni_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'cmake_target' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'uline_patrol_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.176s] DEBUG:colcon.colcon_core.verb:Building package 'uline_patrol_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs', 'merge_install': False, 'path': '/home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'cmake_target' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.177s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description', 'merge_install': False, 'path': '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_description', 'symlink_install': False, 'test_result_base': None}
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'cmake_target' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_gazebo_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.177s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_gazebo_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins', 'merge_install': False, 'path': '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_gazebo_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'cmake_target' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'velodyne_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.177s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator', 'merge_install': False, 'path': '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.177s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.178s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.178s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_description' with build type 'ament_cmake'
+[0.178s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_description'
+[0.179s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.179s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.179s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.182s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_gazebo_plugins' with build type 'ament_cmake'
+[0.182s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_gazebo_plugins'
+[0.182s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.182s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.184s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lumen/workspace/humble_ws/src/omni_robot/omni_gazebo' with build type 'ament_cmake'
+[0.184s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lumen/workspace/humble_ws/src/omni_robot/omni_gazebo'
+[0.184s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.184s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.185s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs' with build type 'ament_cmake'
+[0.185s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs'
+[0.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_description -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description
+[0.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_gazebo_plugins -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins
+[0.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/omni_gazebo -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo
+[0.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_description -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description -- -j32 -l32
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description -- -j32 -l32
+[0.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description
+[0.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_description)
+[0.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_description
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description' for CMake module files
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description' for CMake config files
+[0.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_description', 'cmake_prefix_path')
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/hook/cmake_prefix_path.ps1'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/hook/cmake_prefix_path.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/hook/cmake_prefix_path.sh'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/bin'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/lib/pkgconfig/velodyne_description.pc'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/lib/python3.10/site-packages'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/bin'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.dsv'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.sh'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.bash'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.zsh'
+[0.600s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/colcon-core/packages/velodyne_description)
+[0.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_description)
+[0.616s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description' for CMake module files
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description' for CMake config files
+[0.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_description', 'cmake_prefix_path')
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/hook/cmake_prefix_path.ps1'
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/hook/cmake_prefix_path.dsv'
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/hook/cmake_prefix_path.sh'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/bin'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/lib/pkgconfig/velodyne_description.pc'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/lib/python3.10/site-packages'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/bin'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.ps1'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.dsv'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.sh'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.bash'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/velodyne_description/package.zsh'
+[0.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description/share/colcon-core/packages/velodyne_description)
+[0.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/omni_gazebo -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo
+[0.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo -- -j32 -l32
+[0.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo -- -j32 -l32
+[0.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo
+[0.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_gazebo)
+[0.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo' for CMake module files
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo' for CMake config files
+[0.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_gazebo', 'cmake_prefix_path')
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/hook/cmake_prefix_path.ps1'
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/hook/cmake_prefix_path.dsv'
+[0.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/hook/cmake_prefix_path.sh'
+[0.991s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/bin'
+[0.991s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/lib/pkgconfig/omni_gazebo.pc'
+[0.991s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/lib/python3.10/site-packages'
+[0.991s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/bin'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.ps1'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.dsv'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.sh'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.bash'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.zsh'
+[0.992s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/colcon-core/packages/omni_gazebo)
+[1.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_gazebo)
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo' for CMake module files
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo' for CMake config files
+[1.008s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_gazebo', 'cmake_prefix_path')
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/hook/cmake_prefix_path.ps1'
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/hook/cmake_prefix_path.dsv'
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/hook/cmake_prefix_path.sh'
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/bin'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/lib/pkgconfig/omni_gazebo.pc'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/lib/python3.10/site-packages'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/bin'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.ps1'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.dsv'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.sh'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.bash'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.zsh'
+[1.010s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/colcon-core/packages/omni_gazebo)
+[1.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/uline_patrol_msgs -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs
+[1.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs -- -j32 -l32
+[1.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_gazebo_plugins -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins
+[1.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins -- -j32 -l32
+[2.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs -- -j32 -l32
+[2.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs
+[2.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uline_patrol_msgs)
+[2.824s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs' for CMake module files
+[2.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/uline_patrol_msgs
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs' for CMake config files
+[2.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('uline_patrol_msgs', 'cmake_prefix_path')
+[2.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/cmake_prefix_path.ps1'
+[2.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/cmake_prefix_path.dsv'
+[2.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/cmake_prefix_path.sh'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/lib'
+[2.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('uline_patrol_msgs', 'ld_library_path_lib')
+[2.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/ld_library_path_lib.ps1'
+[2.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/ld_library_path_lib.dsv'
+[2.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/ld_library_path_lib.sh'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/bin'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/lib/pkgconfig/uline_patrol_msgs.pc'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/lib/python3.10/site-packages'
+[2.827s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/bin'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.ps1'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.dsv'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.sh'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.bash'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.zsh'
+[2.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/colcon-core/packages/uline_patrol_msgs)
+[2.881s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uline_patrol_msgs)
+[2.881s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs' for CMake module files
+[2.881s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs' for CMake config files
+[2.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('uline_patrol_msgs', 'cmake_prefix_path')
+[2.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/cmake_prefix_path.ps1'
+[2.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/cmake_prefix_path.dsv'
+[2.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/cmake_prefix_path.sh'
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/lib'
+[2.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('uline_patrol_msgs', 'ld_library_path_lib')
+[2.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/ld_library_path_lib.ps1'
+[2.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/ld_library_path_lib.dsv'
+[2.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/hook/ld_library_path_lib.sh'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/bin'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/lib/pkgconfig/uline_patrol_msgs.pc'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/lib/python3.10/site-packages'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/bin'
+[2.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.ps1'
+[2.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.dsv'
+[2.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.sh'
+[2.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.bash'
+[2.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/uline_patrol_msgs/package.zsh'
+[2.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs/share/colcon-core/packages/uline_patrol_msgs)
+[9.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins -- -j32 -l32
+[9.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins
+[9.891s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_gazebo_plugins)
+[9.891s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins' for CMake module files
+[9.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_gazebo_plugins
+[9.891s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins' for CMake config files
+[9.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_gazebo_plugins', 'cmake_prefix_path')
+[9.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/cmake_prefix_path.ps1'
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/cmake_prefix_path.dsv'
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/cmake_prefix_path.sh'
+[9.892s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/lib'
+[9.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_gazebo_plugins', 'ld_library_path_lib')
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/ld_library_path_lib.ps1'
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/ld_library_path_lib.dsv'
+[9.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/ld_library_path_lib.sh'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/bin'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/lib/pkgconfig/velodyne_gazebo_plugins.pc'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/lib/python3.10/site-packages'
+[9.893s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/bin'
+[9.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.ps1'
+[9.893s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv'
+[9.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.sh'
+[9.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.bash'
+[9.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.zsh'
+[9.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/colcon-core/packages/velodyne_gazebo_plugins)
+[9.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_gazebo_plugins)
+[9.910s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins' for CMake module files
+[9.910s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins' for CMake config files
+[9.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_gazebo_plugins', 'cmake_prefix_path')
+[9.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/cmake_prefix_path.ps1'
+[9.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/cmake_prefix_path.dsv'
+[9.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/cmake_prefix_path.sh'
+[9.911s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/lib'
+[9.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_gazebo_plugins', 'ld_library_path_lib')
+[9.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/ld_library_path_lib.ps1'
+[9.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/ld_library_path_lib.dsv'
+[9.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/hook/ld_library_path_lib.sh'
+[9.912s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/bin'
+[9.912s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/lib/pkgconfig/velodyne_gazebo_plugins.pc'
+[9.912s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/lib/python3.10/site-packages'
+[9.912s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/bin'
+[9.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.ps1'
+[9.912s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.dsv'
+[9.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.sh'
+[9.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.bash'
+[9.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/velodyne_gazebo_plugins/package.zsh'
+[9.913s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins/share/colcon-core/packages/velodyne_gazebo_plugins)
+[9.913s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_simulator' with build type 'ament_cmake'
+[9.913s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_simulator'
+[9.913s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.913s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator': CMAKE_PREFIX_PATH=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator:/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs:/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_simulator -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator
+[10.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator' returned '0': CMAKE_PREFIX_PATH=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator:/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs:/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo:/opt/ros/humble /usr/bin/cmake /home/lumen/workspace/humble_ws/src/omni_robot/velodyne_simulator/velodyne_simulator -DCMAKE_INSTALL_PREFIX=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator
+[10.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator': CMAKE_PREFIX_PATH=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator:/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs:/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator -- -j32 -l32
+[10.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator' returned '0': CMAKE_PREFIX_PATH=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator:/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs:/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator -- -j32 -l32
+[10.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator': CMAKE_PREFIX_PATH=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator:/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs:/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator
+[10.309s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_simulator)
+[10.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator' returned '0': CMAKE_PREFIX_PATH=/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_gazebo_plugins:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_description:/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator:/home/lumen/workspace/humble_ws/src/omni_robot/install/uline_patrol_msgs:/home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/lumen/workspace/humble_ws/src/omni_robot/build/velodyne_simulator
+[10.309s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator' for CMake module files
+[10.310s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator' for CMake config files
+[10.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_simulator', 'cmake_prefix_path')
+[10.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/hook/cmake_prefix_path.ps1'
+[10.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/hook/cmake_prefix_path.dsv'
+[10.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/hook/cmake_prefix_path.sh'
+[10.310s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/bin'
+[10.311s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/lib/pkgconfig/velodyne_simulator.pc'
+[10.311s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/lib/python3.10/site-packages'
+[10.311s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/bin'
+[10.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.ps1'
+[10.311s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.dsv'
+[10.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.sh'
+[10.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.bash'
+[10.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.zsh'
+[10.312s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/colcon-core/packages/velodyne_simulator)
+[10.326s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_simulator)
+[10.326s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator' for CMake module files
+[10.326s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator' for CMake config files
+[10.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_simulator', 'cmake_prefix_path')
+[10.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/hook/cmake_prefix_path.ps1'
+[10.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/hook/cmake_prefix_path.dsv'
+[10.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/hook/cmake_prefix_path.sh'
+[10.327s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/bin'
+[10.327s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/lib/pkgconfig/velodyne_simulator.pc'
+[10.327s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/lib/python3.10/site-packages'
+[10.327s] Level 1:colcon.colcon_core.environment:checking '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/bin'
+[10.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.ps1'
+[10.328s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.dsv'
+[10.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.sh'
+[10.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.bash'
+[10.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/velodyne_simulator/package.zsh'
+[10.328s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lumen/workspace/humble_ws/src/omni_robot/install/velodyne_simulator/share/colcon-core/packages/velodyne_simulator)
+[10.328s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.329s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.332s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.332s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.332s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.339s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.339s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lumen/workspace/humble_ws/src/omni_robot/install/local_setup.ps1'
+[10.339s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lumen/workspace/humble_ws/src/omni_robot/install/_local_setup_util_ps1.py'
+[10.340s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lumen/workspace/humble_ws/src/omni_robot/install/setup.ps1'
+[10.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lumen/workspace/humble_ws/src/omni_robot/install/local_setup.sh'
+[10.340s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lumen/workspace/humble_ws/src/omni_robot/install/_local_setup_util_sh.py'
+[10.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lumen/workspace/humble_ws/src/omni_robot/install/setup.sh'
+[10.341s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lumen/workspace/humble_ws/src/omni_robot/install/local_setup.bash'
+[10.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lumen/workspace/humble_ws/src/omni_robot/install/setup.bash'
+[10.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lumen/workspace/humble_ws/src/omni_robot/install/local_setup.zsh'
+[10.342s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lumen/workspace/humble_ws/src/omni_robot/install/setup.zsh'

@@ -1,0 +1,195 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo
+-- Install configuration: ""
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/config
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/config/rviz_config.rviz
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/roller.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/tfs_1.bmp
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/chassis_agvs.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/agvs_wheel.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/agvs_wheel.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/astra.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/r200.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/xtion_pro_camera.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/hokuyo.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/sensor_pole.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/kinect.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/r200.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/xtion_pro_stack.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/asus_xtion_pro_live.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/astra.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/0_xtion_pro.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/xtion_pro_camera.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/kinect.tga
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/r200_bracket.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/kinect.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/asus_xtion_pro_live.png
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/r200_bracket_end.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rgbd/xtion_pro.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/chassis_agvs.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/omniwheel.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/side_wheel_agvs.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/box.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/base.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/agvs_logos.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rplidar.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/motor_wheel.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/robot
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/robot/WheelDrive_degenerateDissolve_cleanUpGeometry002_centered.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/robot/ExtendedAmiroOnly_degenerateDissolve_cleanUpGeometry005.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/plate_middle.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/pole_middle.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/plate_top.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/pole_bottom.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/pole_kinect.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/plate_bottom.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/hexagons/pole_top.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-04552-1000-RA_Turtlebot_M-F_Standoff_color.png
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-04552-1000-RA_Turtlebot_M-F_Standoff.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/plate_0_logo.tga
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-04552-2000-RA_Turtlebot_M-F_Standoff.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-04552-2000-RA_Turtlebot_M-F_Standoff_color.png
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/plate_1_logo.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-04556-RA_Kinect_Standoff_Assy.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-02421-8000-RA_Turtlebot_F-F_Standoff.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/plate_1_logo.tga
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/plate_2_logo.tga
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-04556-RA_Kinect_Standoff_Assy.3ds
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-02403-125_Spacer.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/plate_0_logo.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/plate_2_logo.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/stacks/circles/68-02421-8000-RA_Turtlebot_F-F_Standoff_color.png
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/agvs_top.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/motor_wheel.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/astra.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/tfs_2.bmp
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/omni_wheel_2.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/laser
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/laser/hokuyo.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/omni_wheel_1.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rim.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/agvs_logos.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/agvs_top.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rim1.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/upper.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/astra.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/r200.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/xtion_pro_camera.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/sensor_pole.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/kinect.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/r200.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/xtion_pro_stack.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/asus_xtion_pro_live.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/astra.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/0_xtion_pro.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/xtion_pro_camera.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/kinect.tga
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/r200_bracket.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/kinect.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/asus_xtion_pro_live.png
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/r200_bracket_end.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/sensors/xtion_pro.jpg
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/meshes
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/meshes/box.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/meshes/rplidar.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/meshes/astra.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/meshes/upper.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/meshes/wheel.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/side_wheel_agvs.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/rimfix.stl
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/meshes/wheel.dae
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/camera
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/camera/generic_rgbd.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/camera/camera.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/camera/astra.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/omni_robot.gazebo
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/laser
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/laser/hokuyo.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/laser/hokuyo_gpu.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/omni_robot.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/proximity
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/proximity/ring.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/proximity/floor.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/proximity/proximity.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/asus_xtion_pro.urdf.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/kinect.urdf.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/r200.urdf.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/laser_support.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/imu.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/inertial.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/astra.urdf.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/urdf/sensors/asus_xtion_pro_offset.urdf.xacro
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/line1.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/line2_with_apriltag.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/jiandan.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/line2.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room/simple
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room/simple/model.config
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room/simple/model.sdf
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room/room_test
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room/room_test/model.config
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/spare_room/room_test/model.sdf
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/s322.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/simple.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/room.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/world/empty.world
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/launch
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/launch/gazebo.launch.py
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/launch/empty_world.launch.py
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/ament_index/resource_index/package_run_dependencies/omni_gazebo
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/ament_index/resource_index/parent_prefix_path/omni_gazebo
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/environment/ament_prefix_path.sh
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/environment/ament_prefix_path.dsv
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/environment/path.sh
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/environment/path.dsv
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/local_setup.bash
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/local_setup.sh
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/local_setup.zsh
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/local_setup.dsv
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.dsv
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/ament_index/resource_index/packages/omni_gazebo
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/cmake/omni_gazeboConfig.cmake
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/cmake/omni_gazeboConfig-version.cmake
+-- Installing: /home/lumen/workspace/humble_ws/src/omni_robot/install/omni_gazebo/share/omni_gazebo/package.xml
