@@ -1,9 +1,0 @@
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/uninstall.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/omni_gazebo_uninstall.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/test.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/edit_cache.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/rebuild_cache.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/list_install_components.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/install.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/install/local.dir
-/home/lumen/workspace/humble_ws/src/omni_robot/build/omni_gazebo/CMakeFiles/install/strip.dir

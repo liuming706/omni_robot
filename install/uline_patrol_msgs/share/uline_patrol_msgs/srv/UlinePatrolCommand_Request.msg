@@ -1,4 +1,0 @@
-string command
-int64 initial_dis 
-float64 velocity
-float64 duration
